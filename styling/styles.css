@@ -1,0 +1,350 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  font-size: 100%; /* Set a base font size */
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: auto;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  z-index: 1000;
+  background-color:rgb(216, 216, 216); /* Optional: Provide a background color for focus visibility */
+  padding: 10px; /* Optional: Add padding for better focus area */
+}
+
+h1 {
+  font-size: 200%; /* 200% of the base font size */
+}
+
+p {
+  font-size: 0.875em; /* 0.875em is equivalent to 87.5% of the base font size */
+}
+
+
+/* Navigation bar styles */
+.nav-cont{
+   margin-top: 0.5%;
+   width:100%;
+   height:80% ;    
+   
+}
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1px 25px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.logo img {
+    margin-top: 14%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 7px;
+    border-color: #ff9900;
+    transition: color 0.3s ease;
+    margin-right: 15px;
+    margin-left: 15px;
+    
+
+}
+
+#work-link:hover,
+#blogs-link:hover,
+#contact-link:hover,
+.current-page {
+    color: #ff9900; /* Change to your desired hover color */
+    font-size: x-large;
+    font-weight: 300;
+    transition: linear;
+    transition-duration: .2s;
+   
+    
+}
+.nav-links a:active,
+.nav-links a.current-page {
+  color: #ff9900; /* Change to your desired hover color */
+  font-weight: 300;
+}
+
+/* Optional: Remove hover color from non-active links */
+.nav-links a:hover:not(:active),
+.nav-links a:hover:not(.current-page) {
+  color: #fff; /* Change to your desired non-hover color (optional) */
+  transition: linear;
+  transition-duration: .2s;
+}
+
+    
+.site-header {    
+    transition: linear;
+    transition-duration: 1s;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(216, 216, 216);
+    color:rgb(45, 43, 43);   
+    border-radius: 25px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px 50px; /* Reduce the top and bottom padding */
+    max-width: 1650px; 
+    justify-content: center;   
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 2%;
+   
+}
+
+.intro {
+    width: 120%;
+    height: 100%;
+    margin-left: 90px;
+    margin-right:10px;
+    float: left;
+
+}
+
+.intro h1 {
+    font-size: 40px;
+    font-weight: bold;
+    width: auto;
+    margin-bottom: 30px;
+}
+.intro p
+{
+    display: flex;
+    align-content: center;
+    font-size: 35px;
+    line-height:70px;
+}
+
+.profile-image img{
+    border-radius: 50%;
+    width: 75%;
+    height:40%;
+   margin: 0% auto;
+   display: flex;
+   box-shadow: 0 9px 8px rgba(0, 0, 0, 0.201);
+  
+}
+
+.about-me {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height:30px;
+    background-color:rgb(216, 216, 216);
+    width: 95%;
+
+
+}
+
+.about-me h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.about-me p{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.container {
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    align-content: center;
+ 
+    
+}
+.container h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 10%;
+}
+/* Education table styles */
+table {
+    line-height: 45px;
+    border-collapse: collapse;
+    width:80%;
+    margin-bottom: 20px;
+    margin: 0 auto; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tr:hover {
+    background-color:rgb(216, 216, 216);
+}
+.footer {
+
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .footer .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .footer .social-icons a:visited
+  {
+    color: rgb(70, 255, 70);
+
+  }
+
+  .footer .logo img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+  }
+  
+  .footer p {
+    color: #333;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+  
+  .footer .logo img:hover
+  {
+   width: 50px;
+   height: 50px;
+  
+   transition:ease-out;
+   transition-duration: .3s;
+
+
+  }
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar {
+      width: 100%;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .site-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .intro,
+    .profile-image {
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+  
+    .about-me {
+      width: 90%;
+    }
+  
+    .education {
+      width: 95%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    /* Add media query styles for tablets here */
+    .site-header {
+      flex-direction: row;
+    }
+  
+    .about-me,
+    .education {
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* Add media query styles for smaller desktops here */
+    .site-header {
+      flex-direction: row;
+    }
+  
+    .about-me,
+    .education {
+      width: 60%;
+    }
+  }

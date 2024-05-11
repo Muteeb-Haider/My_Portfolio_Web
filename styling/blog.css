@@ -1,0 +1,216 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    
+    background-image: url('background.jpg'); /* Replace 'your-image-file.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+}
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    font-size: 100%; /* Set a base font size */
+}
+
+h1 {
+    font-size: 200%; /* 200% of the base font size */
+}
+
+p {
+    font-size: 0.875em; /* 0.875em is equivalent to 87.5% of the base font size */
+}
+
+
+/* Navigation bar styles */
+.nav-cont {
+    margin-top: 0.5%;
+    width:100%;
+    height:80% ;    
+}
+
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1px 25px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    box-shadow: 0 8px 10px rgba(241, 237, 237, 0.265);
+}
+
+.logo img {
+    margin-top: 14%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#home-link:hover,
+#work-link:hover,
+#contact-link:hover,
+.current-page {
+    color: #ff9900; /* Change to your desired hover color */
+    font-size: x-large;
+    font-weight: 300;
+    transition: linear;
+    transition-duration: .2s;
+}
+
+.nav-links a:active,
+.nav-links a.current-page {
+    color: #ff9900; /* Change to your desired hover color */
+    font-weight: 300;
+}
+
+/* Optional: Remove hover color from non-active links */
+.nav-links a:hover:not(:active),
+.nav-links a:hover:not(.current-page) {
+    color: #fff; /* Change to your desired non-hover color (optional) */
+    transition: linear;
+    transition-duration: .2s;
+
+}
+.container {
+    padding-top: 50px;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* This centers the container horizontally */
+ 
+    box-shadow: 0px 10px 10px rgba(109, 103, 103, 0.996);    line-height: 25px;
+}
+.blog-post {
+
+    background-color: hsla(0, 0%, 100%, 0.854);
+
+
+    padding: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.blog-post h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.post-meta {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+img {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height: 40%;
+    margin-top: 20px;
+    margin-bottom:20px;
+
+}
+
+video {
+    
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.asi
+{
+    
+    padding: 20px;
+    background-color: #1d1d1dda;
+    width: 30%;
+    float: right;
+    margin-right: 50px; 
+    height: 150px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(55, 53, 53, 0.73);
+
+}
+
+.footer {
+    clear: both; /* Added to clear floats */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+  
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+}
+
+.footer .logo img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    background-color: #fff;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    
+}
+
+.footer .logo img:hover {
+    width: 50px;
+    height: 50px;
+    transition: ease-out;
+    transition-duration: .3s;
+}
+
+@media screen and (max-width: 768px) {
+    .content-block {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-block {
+        width: 100%;
+    }
+} 

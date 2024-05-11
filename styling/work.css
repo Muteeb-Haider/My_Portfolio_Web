@@ -1,0 +1,203 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    font-size: 100%; /* Set a base font size */
+}
+
+/* Example of setting font size using relative units */
+
+/* You can use percentages as well */
+h1 {
+    font-size: 200%; /* 200% of the base font size */
+}
+
+p {
+    font-size: 0.875em; /* 0.875em is equivalent to 87.5% of the base font size */
+}
+
+
+/* Navigation bar styles */
+.nav-cont {
+    margin-top: 0.5%;
+    width:100%;
+    height:80% ;    
+}
+
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1px 25px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    margin-top: 14%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#home-link:hover,
+#blogs-link:hover,
+#contact-link:hover,
+.current-page {
+    color: #ff9900; /* Change to your desired hover color */
+    font-size: x-large;
+    font-weight: 300;
+    transition: linear;
+    transition-duration: .2s;
+}
+
+.nav-links a:active,
+.nav-links a.current-page {
+    color: #ff9900; /* Change to your desired hover color */
+    font-weight: 300;
+}
+
+/* Optional: Remove hover color from non-active links */
+.nav-links a:hover:not(:active),
+.nav-links a:hover:not(.current-page) {
+    color: #fff; /* Change to your desired non-hover color (optional) */
+    transition: linear;
+    transition-duration: .2s;
+}
+
+.work {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.work p{
+    margin-top: 1%;
+    font-size: larger;
+}
+
+.content-box {
+    width: 100%;
+    max-height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+.content-block {
+    width: 24%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+
+.content-block:hover {
+    width: 28%;
+    transition-duration: .5s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.content-block h2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.content-block img {
+    width: 100%;
+    height: auto;
+}
+
+.full-description {
+    display: none;
+}
+
+.full-description.expanded {
+    display: block;
+}
+
+.description-container {
+    overflow: hidden; /* Added overflow property */
+}
+
+.footer {
+    clear: both; /* Added to clear floats */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+}
+
+.footer .logo img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.footer .logo img:hover {
+    width: 50px;
+    height: 50px;
+    transition: ease-out;
+    transition-duration: .3s;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-block {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-block {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-block {
+        width: 100%;
+    }
+}

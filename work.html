@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling/work.css">
+    <title> Muteeb Haider </title>
+
+</head>
+<body> 
+<div class="nav-cont">
+    <header>
+      <nav class="navbar">        
+        <ul class="nav-links">
+             <li><a id="home-link" href="index.html">Home  </a></li>
+             <li><a  id="work-link"  class="current-page"  href="#">Work </a></li>
+             <li><a  id="blogs-link" href="blog.html">Blogs </a></li>
+             <li><a id="contact-link" href="contact.html">Contact </a></li>
+        </ul>
+        <div class="logo">
+            <img src="media/L3.jpg" alt="My Logo">
+        </div>
+        </nav>
+        </header>
+        </div>
+        <div class="work"> 
+            <h1>My Work</h1>
+            <p>Here is the some of my work</p>
+        </div>
+        <div class="content-box">
+
+        <div class="content-block">
+            <a href ="media/tic-toe.jpg">
+                <img src="media/tic-toe.jpg" alt="Work Image">
+            </a>
+            <h2>Tic Tac Toe</h2>
+            <p class="description">Tic-tac-toe is a simple game that is 3X3 grid.The game is usually played with</p>
+            <div class="description-container">
+                <p class="full-description">two players, using X and O as the two different markers. The player using X starts the game and then players take turns placing their markers on the grid. The goal of the game is to get three of your markers in a row horizontally, vertically or diagonally before your opponent does. If all of the spaces on the grid are filled </p>
+                <button class="see-more-btn" >See more</button>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <a href="media/ship-shooter.jpg">
+                <img src="media/ship-shooter.jpg" alt="Ship Shooter">
+            </a>
+            <h2>Ship Shooter</h2>
+            <p class="description">A ship shooter game is a type of game in which the player controls a ship and </p>
+            <div class="description-container">
+                <p class="full-description">must defend it against enemy ships or other obstacles while attempting to destroy them. The game is typically set in a science fiction or fantasy setting. In a ship shooter game, the player's ship is equipped with various weapons and abilities, such as lasers, missiles, and shields. The player will move the ship in different directions and use the weapons to destroy enemy ships and other obstacles</p>
+                <button class="see-more-btn" >See more</button>
+            </div>
+        </div>
+
+
+        <div class="content-block">
+            <a href="media/snake.png">
+                <img src="media/snake.png"  alt="Snake Game">
+            </a>    
+            <h2>Multiplayer Snake</h2>
+            <p class="description">A multiplayer snake game is a type of online multiplayer game that is based</p>
+            <div class="description-container">
+                <p class="full-description">on the classic Snake game, but with multiple players competing against each other in real-time. The game is played on a shared board and players control a snake that moves around the board trying to consume food and grow longer. The objective of the game is to be the last snake standing by avoiding crashing into other players' snakes, the walls, and own tail.</p>
+                <button class="see-more-btn" >See more</button>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <a href="media/word-guess.png">
+                <img src="media/word-guess.png" alt="Word-guess Game">
+            </a>
+            
+            <h2>WORD GUESS</h2>
+            <p class="description">A word guess game is a type of game where players try to guess a hidden</p>
+            <div class="description-container">
+                <p class="full-description"> word or phrase by suggesting letters or words. The game is played in various ways, but typically one player is the "computer" and chooses a word or phrase, while the player take turns trying to guess the word or phrase by suggesting letters. The computer responds with a message indicating which letters in the word or phrase are correct and in the correct position, and which letters are correct but in the wrong position.</p>
+                <button class="see-more-btn" >See more</button>
+            </div>
+        </div>
+
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const seeMoreButtons = document.querySelectorAll('.see-more-btn');
+                
+                seeMoreButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const descriptionContainer = this.parentNode;
+                        const description = descriptionContainer.querySelector('.full-description');
+                        if (description.style.display === 'none' || description.style.display === '') {
+                            description.style.display = 'block';
+                            this.textContent = 'See Less';
+                        } else {
+                            description.style.display = 'none';
+                            this.textContent = 'See More';
+                        }
+                    });
+                });
+            });
+        </script>
+
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://github.com/Muteeb-Haider" class="logo"><img src="media/github.png" alt="GitHub"></a>        
+                <a href="https://www.instagram.com/exotic._.muteeb" class="logo"><img src="media/instagram.png" alt="Instagram"></a>
+                <a href="https://wa.me/+923124388791" class="logo"><img src="media/whatsaapp.png" alt="WhatsApp"></a>       
+                <a href="https://www.fiverr.com/muteeb125" class="logo"><img src="media/fiver.png" alt="Fiverr"></a>
+            </div>
+            <p style="color:rgb(52, 51, 51)">&copy; 2024 Muteeb Haider (AGBW8L). All rights reserved.</p>
+        </footer>
+        </body>
+        </html>
